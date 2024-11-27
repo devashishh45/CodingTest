@@ -5,8 +5,8 @@ package CodingTest;
 
 public class Main {
 
-    public static void findMissingNo(int[] arr, int max){
-        for (int i=1; i<=max;i++){
+    public static void findMissingNo(int[] arr){
+        for (int i=1; i<=arr.length;i++){
             boolean found = false;
             for (int num: arr){
                 if (num==i){
@@ -23,8 +23,7 @@ public class Main {
 
     public static void main(String[] args) {
     int[] arr ={1,3,4,5,7};
-    int max= 7;
         System.out.println("Missing no. in array is");
-        findMissingNo(arr,max);
+        findMissingNo(arr);
     }
 }
